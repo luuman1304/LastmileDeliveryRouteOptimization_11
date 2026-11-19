@@ -1,6 +1,6 @@
 {
   "format": "lastmile-research-github-release-v1",
-  "generated_at_utc": "2026-11-19T06:09:17.229296+00:00",
+  "generated_at_utc": "2026-11-19T06:12:23.374173+00:00",
   "scope": "Current research source, documentation, clean report template, tests, download scripts, and aggregate claim artifacts. Raw data, rendered paper output, and reproducible row-level artifacts are excluded.",
   "file_count": 84,
   "files": [
@@ -26,8 +26,8 @@
     },
     {
       "path": "data/README.md",
-      "bytes": 629,
-      "sha256": "905200b07fb8d53fc2a3afb9a0066f5df9e196167770ede0913a0a3fa51c9c4d"
+      "bytes": 550,
+      "sha256": "577bfe8e1b73999127f856a49544910dbf96a2fb3ff58ca71cdefe5ec4c0a8ab"
     },
     {
       "path": "data/raw/.gitkeep",
