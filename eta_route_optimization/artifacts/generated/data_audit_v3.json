@@ -1,0 +1,286 @@
+{
+  "lade": {
+    "dataset": "LaDe-D",
+    "files": [
+      {
+        "path": "data/raw/lade_d/delivery_cq-00000-of-00001-465887add76aeabc.parquet",
+        "bytes": 61844340,
+        "sha256": "ea503be5d475aa9a3ceb27f09ce6f910f48a02e78122428fbb4f9c724820323b",
+        "rows": 931351,
+        "row_groups": 932,
+        "columns": [
+          "order_id",
+          "region_id",
+          "city",
+          "courier_id",
+          "lng",
+          "lat",
+          "aoi_id",
+          "aoi_type",
+          "accept_time",
+          "accept_gps_time",
+          "accept_gps_lng",
+          "accept_gps_lat",
+          "delivery_time",
+          "delivery_gps_time",
+          "delivery_gps_lng",
+          "delivery_gps_lat",
+          "ds"
+        ],
+        "city_counts": {
+          "Chongqing": 931351
+        },
+        "duplicate_order_ids": 0,
+        "negative_accept_to_delivery": 3,
+        "missing_stop_coordinate_pairs": 0,
+        "missing_accept_gps_pairs": 0,
+        "missing_delivery_gps_pairs": 0,
+        "null_counts": {
+          "accept_gps_lat": 0,
+          "accept_gps_lng": 0,
+          "accept_time": 0,
+          "aoi_id": 0,
+          "aoi_type": 0,
+          "city": 0,
+          "courier_id": 0,
+          "delivery_gps_lat": 0,
+          "delivery_gps_lng": 0,
+          "delivery_time": 0,
+          "ds": 0,
+          "lat": 0,
+          "lng": 0,
+          "order_id": 0,
+          "region_id": 0
+        }
+      },
+      {
+        "path": "data/raw/lade_d/delivery_hz-00000-of-00001-8090c86f64781f71.parquet",
+        "bytes": 116465564,
+        "sha256": "00b6b4dca471cadee796a3fc7f07dcd919499ec58459ea67db784dcb06089e75",
+        "rows": 1861600,
+        "row_groups": 1862,
+        "columns": [
+          "order_id",
+          "region_id",
+          "city",
+          "courier_id",
+          "lng",
+          "lat",
+          "aoi_id",
+          "aoi_type",
+          "accept_time",
+          "accept_gps_time",
+          "accept_gps_lng",
+          "accept_gps_lat",
+          "delivery_time",
+          "delivery_gps_time",
+          "delivery_gps_lng",
+          "delivery_gps_lat",
+          "ds"
+        ],
+        "city_counts": {
+          "Hangzhou": 1861600
+        },
+        "duplicate_order_ids": 0,
+        "negative_accept_to_delivery": 0,
+        "missing_stop_coordinate_pairs": 0,
+        "missing_accept_gps_pairs": 0,
+        "missing_delivery_gps_pairs": 0,
+        "null_counts": {
+          "accept_gps_lat": 0,
+          "accept_gps_lng": 0,
+          "accept_time": 0,
+          "aoi_id": 0,
+          "aoi_type": 0,
+          "city": 0,
+          "courier_id": 0,
+          "delivery_gps_lat": 0,
+          "delivery_gps_lng": 0,
+          "delivery_time": 0,
+          "ds": 0,
+          "lat": 0,
+          "lng": 0,
+          "order_id": 0,
+          "region_id": 0
+        }
+      },
+      {
+        "path": "data/raw/lade_d/delivery_jl-00000-of-00001-a4fbefe3c368583c.parquet",
+        "bytes": 2271457,
+        "sha256": "ed0296b83d84f739bb91ab3d3cf1a430cf71e3793e25ddf50f88aa3ef34b51fc",
+        "rows": 31415,
+        "row_groups": 32,
+        "columns": [
+          "order_id",
+          "region_id",
+          "city",
+          "courier_id",
+          "lng",
+          "lat",
+          "aoi_id",
+          "aoi_type",
+          "accept_time",
+          "accept_gps_time",
+          "accept_gps_lng",
+          "accept_gps_lat",
+          "delivery_time",
+          "delivery_gps_time",
+          "delivery_gps_lng",
+          "delivery_gps_lat",
+          "ds"
+        ],
+        "city_counts": {
+          "Jilin": 31415
+        },
+        "duplicate_order_ids": 0,
+        "negative_accept_to_delivery": 0,
+        "missing_stop_coordinate_pairs": 0,
+        "missing_accept_gps_pairs": 955,
+        "missing_delivery_gps_pairs": 0,
+        "null_counts": {
+          "accept_gps_lat": 955,
+          "accept_gps_lng": 955,
+          "accept_time": 0,
+          "aoi_id": 0,
+          "aoi_type": 0,
+          "city": 0,
+          "courier_id": 0,
+          "delivery_gps_lat": 0,
+          "delivery_gps_lng": 0,
+          "delivery_time": 0,
+          "ds": 0,
+          "lat": 0,
+          "lng": 0,
+          "order_id": 0,
+          "region_id": 0
+        }
+      },
+      {
+        "path": "data/raw/lade_d/delivery_sh-00000-of-00001-ad9a4b1d79823540.parquet",
+        "bytes": 94841102,
+        "sha256": "a0561b186b924ffb6ac2612acbd8fd94ab75a752b3bd70276e5fa7b335a778f7",
+        "rows": 1483864,
+        "row_groups": 1484,
+        "columns": [
+          "order_id",
+          "region_id",
+          "city",
+          "courier_id",
+          "lng",
+          "lat",
+          "aoi_id",
+          "aoi_type",
+          "accept_time",
+          "accept_gps_time",
+          "accept_gps_lng",
+          "accept_gps_lat",
+          "delivery_time",
+          "delivery_gps_time",
+          "delivery_gps_lng",
+          "delivery_gps_lat",
+          "ds"
+        ],
+        "city_counts": {
+          "Shanghai": 1483864
+        },
+        "duplicate_order_ids": 0,
+        "negative_accept_to_delivery": 0,
+        "missing_stop_coordinate_pairs": 0,
+        "missing_accept_gps_pairs": 0,
+        "missing_delivery_gps_pairs": 0,
+        "null_counts": {
+          "accept_gps_lat": 0,
+          "accept_gps_lng": 0,
+          "accept_time": 0,
+          "aoi_id": 0,
+          "aoi_type": 0,
+          "city": 0,
+          "courier_id": 0,
+          "delivery_gps_lat": 0,
+          "delivery_gps_lng": 0,
+          "delivery_time": 0,
+          "ds": 0,
+          "lat": 0,
+          "lng": 0,
+          "order_id": 0,
+          "region_id": 0
+        }
+      },
+      {
+        "path": "data/raw/lade_d/delivery_yt-00000-of-00001-cc85c1fcb1d10955.parquet",
+        "bytes": 14807092,
+        "sha256": "2c5e5566ca8e4976e215822d8d5f3d5db157aba0dfe85a952b0cb357dee0ec5d",
+        "rows": 206431,
+        "row_groups": 207,
+        "columns": [
+          "order_id",
+          "region_id",
+          "city",
+          "courier_id",
+          "lng",
+          "lat",
+          "aoi_id",
+          "aoi_type",
+          "accept_time",
+          "accept_gps_time",
+          "accept_gps_lng",
+          "accept_gps_lat",
+          "delivery_time",
+          "delivery_gps_time",
+          "delivery_gps_lng",
+          "delivery_gps_lat",
+          "ds"
+        ],
+        "city_counts": {
+          "Yantai": 206431
+        },
+        "duplicate_order_ids": 0,
+        "negative_accept_to_delivery": 0,
+        "missing_stop_coordinate_pairs": 0,
+        "missing_accept_gps_pairs": 2422,
+        "missing_delivery_gps_pairs": 0,
+        "null_counts": {
+          "accept_gps_lat": 2422,
+          "accept_gps_lng": 2422,
+          "accept_time": 0,
+          "aoi_id": 0,
+          "aoi_type": 0,
+          "city": 0,
+          "courier_id": 0,
+          "delivery_gps_lat": 0,
+          "delivery_gps_lng": 0,
+          "delivery_time": 0,
+          "ds": 0,
+          "lat": 0,
+          "lng": 0,
+          "order_id": 0,
+          "region_id": 0
+        }
+      }
+    ],
+    "total_rows": 4514661
+  },
+  "amazon": {
+    "dataset": "Amazon Last Mile Routing Research Challenge",
+    "root": "data/raw/amazon/almrrc2021-data-training/model_build_inputs",
+    "files": {
+      "actual_sequences.json": {
+        "bytes": 9665078,
+        "sha256": "3de44067242e8fa841d4b852db8809afaa23fe852e452ee4a2f54f0f0fb77e3c"
+      },
+      "package_data.json": {
+        "bytes": 375437806,
+        "sha256": "9ac858358e9f43d34cb65198c03601c814328a06dec9b71ee88b40aaec7f0966"
+      },
+      "route_data.json": {
+        "bytes": 78972162,
+        "sha256": "da3a5d4e73b683d756111f0d9e6d3f20eb8e82adf7c89ee6ee0cb2239abd2f38"
+      },
+      "travel_times.json": {
+        "bytes": 1817146363,
+        "sha256": "0023d7517380f15b611d77bc0f8a41a1b89459c7c12c37e88981ea16a2b99e2d"
+      }
+    },
+    "semantic_counts": "See artifacts/data_audit_snapshot_2026-11-16.json. The experiment loader checks route, stop, sequence, package and travel-matrix key consistency before evaluation."
+  }
+}

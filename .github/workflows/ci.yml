@@ -1,0 +1,28 @@
+name: research-quality-gates
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install project and development tools
+        run: python -m pip install -e 'eta_route_optimization[dev]'
+      - name: Unit tests
+        env:
+          LOKY_MAX_CPU_COUNT: "8"
+        run: python -m pytest -q eta_route_optimization/tests
+      - name: Lint
+        run: python -m ruff check --no-cache eta_route_optimization
+      - name: Compile
+        run: python -m compileall -q eta_route_optimization/src eta_route_optimization/scripts
+      - name: Verify report generator against committed aggregate artifacts
+        run: python eta_route_optimization/scripts/generate_research_paper.py

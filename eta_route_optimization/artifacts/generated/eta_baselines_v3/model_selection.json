@@ -1,0 +1,28 @@
+{
+  "selection_split": "validation",
+  "test_metrics_used_for_selection": false,
+  "selection_metric": "mean_query_mae_minutes",
+  "candidate_validation_query_mae": {
+    "historical_median": 206.86177684744263,
+    "effective_speed": 370.21626114079976,
+    "knn": 247.00997028046666,
+    "lightgbm_ensemble": 187.89505366198802,
+    "mlp_ensemble": 251.4336169309054
+  },
+  "selected_model": "lightgbm_ensemble",
+  "selected_prediction_column": "lightgbm",
+  "lightgbm_best_iterations": {
+    "17": 6003,
+    "29": 4552,
+    "43": 3114,
+    "71": 2455,
+    "101": 8035
+  },
+  "mlp_iterations": {
+    "17": 108,
+    "29": 187,
+    "43": 63,
+    "71": 133,
+    "101": 211
+  }
+}

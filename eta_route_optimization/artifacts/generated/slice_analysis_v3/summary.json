@@ -1,0 +1,19 @@
+{
+  "rows": 178430,
+  "aoi_unseen_rows": 6846,
+  "aoi_unseen_ratio": 0.03836798744605728,
+  "dimensions": [
+    "city",
+    "aoi_seen",
+    "pending_band",
+    "distance_band",
+    "hour_band",
+    "eta_band"
+  ],
+  "models": [
+    "historical_median",
+    "lightgbm",
+    "mlp",
+    "selected_prediction"
+  ]
+}

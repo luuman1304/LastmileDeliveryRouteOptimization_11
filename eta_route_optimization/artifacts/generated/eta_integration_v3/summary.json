@@ -1,0 +1,110 @@
+{
+  "test_rows": 178430,
+  "eligible_queries_with_at_least_two_tasks": 15247,
+  "primary": [
+    {
+      "model": "historical_median",
+      "seed": null,
+      "noise_sd_minutes": 0.0,
+      "scope": "overall",
+      "group": "all",
+      "queries": 15247,
+      "hr_at_3": 0.4030301043,
+      "krc": 0.0123547242,
+      "lsd": 29.9430419896,
+      "edit_distance": 9.9017511642
+    },
+    {
+      "model": "effective_speed",
+      "seed": null,
+      "noise_sd_minutes": 0.0,
+      "scope": "overall",
+      "group": "all",
+      "queries": 15247,
+      "hr_at_3": 0.603922083,
+      "krc": 0.272162619,
+      "lsd": 19.5481942591,
+      "edit_distance": 8.6788220634
+    },
+    {
+      "model": "knn",
+      "seed": null,
+      "noise_sd_minutes": 0.0,
+      "scope": "overall",
+      "group": "all",
+      "queries": 15247,
+      "hr_at_3": 0.4690321593,
+      "krc": 0.0825608931,
+      "lsd": 26.3224757128,
+      "edit_distance": 9.6082508034
+    },
+    {
+      "model": "lightgbm",
+      "seed": null,
+      "noise_sd_minutes": 0.0,
+      "scope": "overall",
+      "group": "all",
+      "queries": 15247,
+      "hr_at_3": 0.6157495464,
+      "krc": 0.2975136724,
+      "lsd": 17.4012552011,
+      "edit_distance": 8.5851642946
+    },
+    {
+      "model": "mlp",
+      "seed": null,
+      "noise_sd_minutes": 0.0,
+      "scope": "overall",
+      "group": "all",
+      "queries": 15247,
+      "hr_at_3": 0.512669159,
+      "krc": 0.1440561901,
+      "lsd": 24.1366590051,
+      "edit_distance": 9.2863514134
+    },
+    {
+      "model": "selected_prediction",
+      "seed": null,
+      "noise_sd_minutes": 0.0,
+      "scope": "overall",
+      "group": "all",
+      "queries": 15247,
+      "hr_at_3": 0.6157495464,
+      "krc": 0.2975136724,
+      "lsd": 17.4012552011,
+      "edit_distance": 8.5851642946
+    }
+  ],
+  "noise_sensitivity": {
+    "5.0": {
+      "hr_at_3_mean": 0.6057497649810891,
+      "hr_at_3_std": 0.0014900513259512292,
+      "krc_mean": 0.2797070370545729,
+      "krc_std": 0.0015411923479039691,
+      "lsd_mean": 17.61596954014496,
+      "lsd_std": 0.026890175447547845,
+      "edit_distance_mean": 8.69592706761986,
+      "edit_distance_std": 0.003858871472314821
+    },
+    "10.0": {
+      "hr_at_3_mean": 0.5897684790450579,
+      "hr_at_3_std": 0.001774385853220999,
+      "krc_mean": 0.2547248404291482,
+      "krc_std": 0.002061495446905399,
+      "lsd_mean": 18.0768994541299,
+      "lsd_std": 0.0404598881259628,
+      "edit_distance_mean": 8.847733980455171,
+      "edit_distance_std": 0.006504928397242903
+    },
+    "20.0": {
+      "hr_at_3_mean": 0.5582956209964801,
+      "hr_at_3_std": 0.0017729306873461635,
+      "krc_mean": 0.21076089894107808,
+      "krc_std": 0.0026547039231152357,
+      "lsd_mean": 19.220865493022067,
+      "lsd_std": 0.0550480620572698,
+      "edit_distance_mean": 9.105555191185152,
+      "edit_distance_std": 0.005523823123398282
+    }
+  }
+}

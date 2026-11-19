@@ -1,0 +1,48 @@
+{
+  "unit": "query_id",
+  "primary_uncertainty_unit": "city_courier_id_cluster",
+  "queries": 16346,
+  "courier_clusters": 2540,
+  "mean_delta_mae_selected_minus_historical": -18.105827952071067,
+  "relative_mae_change": -0.12430214829754802,
+  "courier_cluster_bootstrap_ci95": [
+    -20.56515356580348,
+    -15.756058526216082
+  ],
+  "query_bootstrap_ci95_sensitivity": [
+    -19.87028525898254,
+    -16.38965058230362
+  ],
+  "queries_selected_better": 12089,
+  "queries_historical_better": 4257,
+  "couriers_selected_better": 2026,
+  "couriers_historical_better": 514,
+  "courier_exact_sign_test_two_sided_p": 4.980525063201695e-211,
+  "leave_one_city_out": [
+    {
+      "left_out_city": "Chongqing",
+      "mean_delta": -18.62097880565966,
+      "queries": 11543
+    },
+    {
+      "left_out_city": "Hangzhou",
+      "mean_delta": -18.528932290380922,
+      "queries": 13120
+    },
+    {
+      "left_out_city": "Jilin",
+      "mean_delta": -18.17743535451952,
+      "queries": 16263
+    },
+    {
+      "left_out_city": "Shanghai",
+      "mean_delta": -21.216405677737228,
+      "queries": 10214
+    },
+    {
+      "left_out_city": "Yantai",
+      "mean_delta": -14.986373634634129,
+      "queries": 14244
+    }
+  ]
+}

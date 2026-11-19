@@ -1,0 +1,125 @@
+{
+  "protocol": {
+    "source_split": "training only",
+    "selection": "up to 12 SHA256-selected routes per station",
+    "routes": 204,
+    "stations": 17,
+    "closed_tour_primary": true,
+    "open_path_sensitivity": true,
+    "ortools_time_limit_seconds": 2
+  },
+  "summary": [
+    {
+      "method": "nearest_neighbor",
+      "routes": 204,
+      "solved_routes": 204,
+      "mean_closed_transit_seconds": 12171.004411764708,
+      "mean_open_transit_seconds": 10395.644607843138,
+      "mean_service_seconds": 17190.813725490196,
+      "mean_lateness_seconds": 13644.82205882353,
+      "mean_late_packages": 2.156862745098039,
+      "mean_runtime_seconds": 0.0002842579508033654,
+      "mean_closed_delta_vs_observed_seconds": 243.07745098039246,
+      "feasibility_rate": 1.0,
+      "volume_feasibility_rate": 1.0
+    },
+    {
+      "method": "nearest_neighbor_2opt",
+      "routes": 204,
+      "solved_routes": 204,
+      "mean_closed_transit_seconds": 11772.724019607844,
+      "mean_open_transit_seconds": 10090.726470588235,
+      "mean_service_seconds": 17190.813725490196,
+      "mean_lateness_seconds": 13326.868627450982,
+      "mean_late_packages": 2.0588235294117645,
+      "mean_runtime_seconds": 0.0002741585392904395,
+      "mean_closed_delta_vs_observed_seconds": -155.20294117647003,
+      "feasibility_rate": 1.0,
+      "volume_feasibility_rate": 1.0
+    },
+    {
+      "method": "observed",
+      "routes": 204,
+      "solved_routes": 204,
+      "mean_closed_transit_seconds": 11927.926960784314,
+      "mean_open_transit_seconds": 10241.018627450982,
+      "mean_service_seconds": 17190.813725490196,
+      "mean_lateness_seconds": 320.3024509803922,
+      "mean_late_packages": 0.2647058823529412,
+      "mean_runtime_seconds": 0.00027810500500445237,
+      "mean_closed_delta_vs_observed_seconds": 0.0,
+      "feasibility_rate": 1.0,
+      "volume_feasibility_rate": 1.0
+    },
+    {
+      "method": "ortools",
+      "routes": 204,
+      "solved_routes": 204,
+      "mean_closed_transit_seconds": 10732.009803921568,
+      "mean_open_transit_seconds": 9167.301470588236,
+      "mean_service_seconds": 17190.813725490196,
+      "mean_lateness_seconds": 9312.006862745104,
+      "mean_late_packages": 1.7794117647058822,
+      "mean_runtime_seconds": 1.9925011872892713,
+      "mean_closed_delta_vs_observed_seconds": -1195.9171568627453,
+      "feasibility_rate": 1.0,
+      "volume_feasibility_rate": 1.0
+    },
+    {
+      "method": "ortools_time_windows",
+      "routes": 204,
+      "solved_routes": 119,
+      "mean_closed_transit_seconds": 10638.502521008402,
+      "mean_open_transit_seconds": 9067.717647058822,
+      "mean_service_seconds": 16852.599159663867,
+      "mean_lateness_seconds": 0.0,
+      "mean_late_packages": 0.0,
+      "mean_runtime_seconds": 2.0016015132940757,
+      "mean_closed_delta_vs_observed_seconds": -1068.0294117647065,
+      "feasibility_rate": 0.5833333333333334,
+      "volume_feasibility_rate": 1.0
+    }
+  ],
+  "paired_inference": {
+    "nearest_neighbor": {
+      "mean_delta_vs_observed_seconds": 243.07745098039243,
+      "bootstrap_ci95": [
+        139.10640931372583,
+        347.3001715686279
+      ],
+      "solved_routes": 204,
+      "routes_better_than_observed": 74,
+      "routes_worse_than_observed": 130
+    },
+    "nearest_neighbor_2opt": {
+      "mean_delta_vs_observed_seconds": -155.20294117646998,
+      "bootstrap_ci95": [
+        -249.7010661764698,
+        -61.23379901960755
+      ],
+      "solved_routes": 204,
+      "routes_better_than_observed": 121,
+      "routes_worse_than_observed": 83
+    },
+    "ortools": {
+      "mean_delta_vs_observed_seconds": -1195.917156862745,
+      "bootstrap_ci95": [
+        -1275.6664583333325,
+        -1115.3750000000002
+      ],
+      "solved_routes": 204,
+      "routes_better_than_observed": 203,
+      "routes_worse_than_observed": 1
+    },
+    "ortools_time_windows": {
+      "mean_delta_vs_observed_seconds": -1068.0294117647068,
+      "bootstrap_ci95": [
+        -1181.4136344537817,
+        -959.7015966386562
+      ],
+      "solved_routes": 119,
+      "routes_better_than_observed": 119,
+      "routes_worse_than_observed": 0
+    }
+  }
+}

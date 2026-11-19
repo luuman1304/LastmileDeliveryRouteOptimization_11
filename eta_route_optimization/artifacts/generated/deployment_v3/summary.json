@@ -1,0 +1,51 @@
+{
+  "model": "lightgbm_seed17_runtime_proxy_for_ensemble",
+  "training_seconds": 179.68399624997983,
+  "best_iteration": 6003,
+  "model_file_bytes": 17331183,
+  "process_max_rss": 1107443712,
+  "process_max_rss_unit": "bytes",
+  "latency": {
+    "1": {
+      "median_batch_milliseconds": 1.9869584793923423,
+      "p95_batch_milliseconds": 2.2017104463884607,
+      "median_per_row_milliseconds": 1.9869584793923423
+    },
+    "32": {
+      "median_batch_milliseconds": 4.120812503970228,
+      "p95_batch_milliseconds": 4.565049723896664,
+      "median_per_row_milliseconds": 0.12877539074906963
+    },
+    "256": {
+      "median_batch_milliseconds": 31.555687019135803,
+      "p95_batch_milliseconds": 63.311301809153534,
+      "median_per_row_milliseconds": 0.12326440241849923
+    },
+    "4096": {
+      "median_batch_milliseconds": 396.281478999299,
+      "p95_batch_milliseconds": 451.5225892551826,
+      "median_per_row_milliseconds": 0.09674840795881323
+    }
+  },
+  "drift_psi_train_vs_october_test": {
+    "query_minute_of_day": 0.03629658865912204,
+    "waiting_minutes": 0.012917844052421872,
+    "direct_distance_km": 0.01843021664316803,
+    "pending_count": 0.08674312489983325
+  },
+  "drift_thresholds": {
+    "monitor": 0.1,
+    "investigate_or_retrain": 0.25
+  },
+  "fallback_policy": {
+    "schema_or_coordinate_failure": "reject_and_route_to_manual_planning",
+    "unseen_city": "do_not_auto_dispatch; use historical_global_median_and_flag",
+    "non_finite_prediction": "replace_with_training_global_median_and_log",
+    "routing_solver_failure": "nearest_neighbor_plus_directed_2opt"
+  },
+  "limitations": [
+    "Latency is local batch inference, not end-to-end service latency.",
+    "RSS includes Python and loaded data, not only the model.",
+    "A five-model ensemble is expected to cost approximately five single-model predictions if not parallelized."
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "format": "lastmile-research-github-release-v1",
+  "generated_at_utc": "2026-11-19T05:41:23.008534+00:00",
+  "scope": "Current research source, documentation, DOCX report, clean report template, tests, download scripts, and aggregate claim artifacts. Raw data and reproducible row-level artifacts are excluded.",
+  "file_count": 85,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 158,
+      "sha256": "d5234c8efb879a45b77c30dee28a8b39ee27db6d598eb828c7268111ab1fc517"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 887,
+      "sha256": "06610b00ba6ae0520fe135c8383d65e6883ee9a9e4590c535d0661538cef138e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 513,
+      "sha256": "fc3ffce1c60cf30c393d50b4c7f48cd9dda7436cc5aad1ddf8a98d1d6a9ec1bb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2778,
+      "sha256": "d8a82a89ae417cc656ae383438f943c4dc4ac5b654b366e79d27be6cb80c730b"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 629,
+      "sha256": "905200b07fb8d53fc2a3afb9a0066f5df9e196167770ede0913a0a3fa51c9c4d"
+    },
+    {
+      "path": "data/raw/.gitkeep",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "eta_route_optimization/.gitignore",
+      "bytes": 186,
+      "sha256": "591f4f6d2eca4d4f38cbcf90787fc7d058d8043168bc041870014a4fbe8519e7"
+    },
+    {
+      "path": "eta_route_optimization/README.md",
+      "bytes": 3870,
+      "sha256": "c32132308026e2f77cdb6316098627250bd546ec188e1671ae2416fcfa09ff5a"
+    },
+    {
+      "path": "eta_route_optimization/TASKS.md",
+      "bytes": 6573,
+      "sha256": "eed3b6eebe5d5de5319bbd1774b4b6706d0af965790ab8230a48f19cb1ae54b9"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/data_audit_snapshot_2026-11-16.json",
+      "bytes": 1182,
+      "sha256": "cf5721fcc7b237deca1686a9ba97713aec0b9cbdaaa33eeb26349251ea44820a"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/amazon_baselines_v2/route_results.csv",
+      "bytes": 290227,
+      "sha256": "204ca1d4c8408fa06a5b28d0ce2e1ad5327f8d6bba3cda5ff3cbdaf992c72997"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/amazon_baselines_v2/sequences.jsonl",
+      "bytes": 913684,
+      "sha256": "4c2dc43bb7b691f21773a9e0014edf261ab3166cf25af1adc3840f20c87d1da2"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/amazon_baselines_v2/summary.json",
+      "bytes": 4174,
+      "sha256": "c477ec167f38476e06811fe847f60f14607c922957431db43e93e25b3f50f522"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/amazon_soft_windows_v3/calibration_results.csv",
+      "bytes": 46915,
+      "sha256": "931ef1a38f31d21d4d20833a8ee50f1cde486bea7c7e9f9c9e34d8116499ddbe"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/amazon_soft_windows_v3/route_results.csv",
+      "bytes": 62436,
+      "sha256": "ff9ff130aa0c36063530fea7a7b3862b7975fd54259f1368468ff0ff9f80adc8"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/amazon_soft_windows_v3/route_runs.csv",
+      "bytes": 221323,
+      "sha256": "fffca134ac58f4c48166456bdb580d3b988e1f14426f51ecccf54385b48a9766"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/amazon_soft_windows_v3/sequences.jsonl",
+      "bytes": 191796,
+      "sha256": "09531d577eedfc8e03a9b7228244b0c082a8e5b9709c8fdddf58f3dc9a3817f4"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/amazon_soft_windows_v3/summary.json",
+      "bytes": 4177,
+      "sha256": "8df4de6ca74bfb506fa1cf35865bd6cbb24e04eedcabc14d82a23fafcb507324"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/balanced_v3/summary.json",
+      "bytes": 7066,
+      "sha256": "f5e7a5d10ef0e36a7404d7126ea8dc94e43d111884799f7db328466da869bdfc"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/data_audit_v3.json",
+      "bytes": 8061,
+      "sha256": "9611a61d65ec1db299e87ea81258011efbd7d81081f85deafd3a393907cc6b00"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/deployment_v3/summary.json",
+      "bytes": 1887,
+      "sha256": "8fd93d691677828f66ad9d85dbd0333ddc3f007c5b919967c1a32b841cd99554"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/eta_baselines_v3/leave_one_city_out.csv",
+      "bytes": 510,
+      "sha256": "ef6ce0c5364e88ef860aa396ca0ae654599e0125be72281960a31535de72ee42"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/eta_baselines_v3/metrics.csv",
+      "bytes": 27762,
+      "sha256": "7a71eaee806c8e380ac479cf6592204798ddbaaa3523ba7d34b7e6bb63b3e99b"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/eta_baselines_v3/model_selection.json",
+      "bytes": 678,
+      "sha256": "63cb6ae2d36810b65f3ec74c0216a3265e891e511e66e9a9b43c11159ac665ab"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/eta_baselines_v3/summary.json",
+      "bytes": 6010,
+      "sha256": "0b01a0de994f5fbec31084853975faea2a48921f15a5c3e2ac5ca329d0800081"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/eta_dataset_v3/manifest.json",
+      "bytes": 3291,
+      "sha256": "1f9525f4cfb991ea8729c9d2258e65bf2f874a0a56ba4883b046318cc400b861"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/eta_dataset_v3/validation.json",
+      "bytes": 756,
+      "sha256": "2fbdb07e1007a1ff129572db874488e60ce3afa21e9e20d2406099a6d2a280cf"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/eta_integration_v3/summary.csv",
+      "bytes": 14882,
+      "sha256": "43a2565c59493acdd81483733fab64c6aec6ef0457d95474e790af7d7077196a"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/eta_integration_v3/summary.json",
+      "bytes": 2912,
+      "sha256": "8dbc5bdd87596118349dc97f95e88df0da57027e6e8312c1767c14efbbf862e3"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/graph_ablation_v3/summary.json",
+      "bytes": 3498,
+      "sha256": "be313a5776104ca72b74d35f09aa20174098e8d48825fa455157dc9a595fec72"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/robustness_v3/summary.json",
+      "bytes": 6789,
+      "sha256": "9389422867eb6d7cf497d9e9ca410055f3c6b1f1313296162072d5d96bee32d5"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/rolling_origin_v3/summary.json",
+      "bytes": 10670,
+      "sha256": "d35331ea78864123c5f51a29cf250575b7881189fb858a02a484218ec2ea5105"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/slice_analysis_v3/eta_slices.csv",
+      "bytes": 9784,
+      "sha256": "4be4cc55a1b444c7100b4b9092fb8957813cf1eb7ec41a2a5d3e62cff06135f1"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/slice_analysis_v3/summary.json",
+      "bytes": 312,
+      "sha256": "87a549a8ae2c0394543a2a788630f7f39ec53ad3862054ddeda72ec0bea339ee"
+    },
+    {
+      "path": "eta_route_optimization/artifacts/generated/statistics_v3/eta_paired_inference.json",
+      "bytes": 1222,
+      "sha256": "ff8b15209c915a2ca5f876f337baf583f830f74d1c2f1898a18f7309636831d3"
+    },
+    {
+      "path": "eta_route_optimization/assets/report_template.docx",
+      "bytes": 6744874,
+      "sha256": "20951ab36950c5715a5963cc878bd56322f89d3e1022333bb9d53fb59b5873a1"
+    },
+    {
+      "path": "eta_route_optimization/configs/report_page_map_v3.json",
+      "bytes": 3332,
+      "sha256": "f7277a82995b06afb970b944723278bc217c885d8cff806bcf8773526346c752"
+    },
+    {
+      "path": "eta_route_optimization/configs/research_v1.yaml",
+      "bytes": 2838,
+      "sha256": "7044a6888ed6e1e8fc13c7262979dbb996a77e19177d3843c017d7afd174ec24"
+    },
+    {
+      "path": "eta_route_optimization/docs/CLAIM_EVIDENCE.md",
+      "bytes": 2238,
+      "sha256": "2212edd83981cae20769db323dafae77aad3f3d5f36677f7becc023803f60520"
+    },
+    {
+      "path": "eta_route_optimization/docs/DATA_CARD.md",
+      "bytes": 2928,
+      "sha256": "2958b8b6c1462b8a81b12b76abe9497dedb017889e10f9e81ef120f05e4e0c00"
+    },
+    {
+      "path": "eta_route_optimization/docs/DATA_FEASIBILITY.md",
+      "bytes": 5039,
+      "sha256": "2ae354d4b89c6cf2e33e124105316edf84d5489bd6c86888f4fc7bf6677ab228"
+    },
+    {
+      "path": "eta_route_optimization/docs/FINAL_RESULTS.md",
+      "bytes": 5082,
+      "sha256": "95321a7be902cce6c6a410152c0ab7f35b2923898e65d8324e6c895d708acbe3"
+    },
+    {
+      "path": "eta_route_optimization/docs/GNN_DECISION.md",
+      "bytes": 1162,
+      "sha256": "d4b952cb3322e7a736b471c3c1033d9c4fdaa155cb575ee11f60860d02b3ecb7"
+    },
+    {
+      "path": "eta_route_optimization/docs/LITERATURE_AND_DECISIONS.md",
+      "bytes": 5987,
+      "sha256": "0d90633503fa48b3c5d712d220c5a64e80a20c1a2f3455856b9988fa7da31a65"
+    },
+    {
+      "path": "eta_route_optimization/docs/MODEL_CARD.md",
+      "bytes": 2886,
+      "sha256": "c98fdd78a523346e308ca45c00eea491b98d03d3e8fd10739b8d9d6b6e0c60a8"
+    },
+    {
+      "path": "eta_route_optimization/docs/REPRODUCIBILITY.md",
+      "bytes": 1901,
+      "sha256": "6eecf2dd266386573dca4787712abcc51ff8caf248d2a92e5cb70fb6894f17b4"
+    },
+    {
+      "path": "eta_route_optimization/docs/RESEARCH_PROTOCOL.md",
+      "bytes": 11151,
+      "sha256": "fff335dbbfa40a6539f6bd435e5d77999ff10e3cecd1d8dc4e64cb0284bd9afb"
+    },
+    {
+      "path": "eta_route_optimization/docs/REUSE_ASSESSMENT.md",
+      "bytes": 3452,
+      "sha256": "616be70bd6e0dca268f85778818c1ab0fce21bfc649e0083e1a20f15d33daf1e"
+    },
+    {
+      "path": "eta_route_optimization/docs/ROBUSTNESS_ASSESSMENT.md",
+      "bytes": 3547,
+      "sha256": "f81d2f58fd3b3149b936dfe064f4524d40c7d819ce66a5e70bc372755b49a76e"
+    },
+    {
+      "path": "eta_route_optimization/pyproject.toml",
+      "bytes": 1562,
+      "sha256": "36b2125466ce80a1e3939531d3f1af405a340f59b984eb333b131d24b6f11b27"
+    },
+    {
+      "path": "eta_route_optimization/references.bib",
+      "bytes": 2707,
+      "sha256": "bd057c0c792354015fc9aaa7a8afbe465314998ccf51c6a91227d5e4ed51b048"
+    },
+    {
+      "path": "eta_route_optimization/scripts/generate_research_paper.py",
+      "bytes": 93117,
+      "sha256": "85b31feee4e3da1a3107b7e6038fbce88c8d1816d486b17b8bd73efcb012de74"
+    },
+    {
+      "path": "eta_route_optimization/scripts/reproduce_v3.sh",
+      "bytes": 2779,
+      "sha256": "b8a18ef061f3618fa16b82c6ad2628361946f5711382df3528a923387df35024"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/__init__.py",
+      "bytes": 99,
+      "sha256": "ccf3b70e62ee4cf9928d3d6eaae0af3bcb2973cd8471568b86c35339700b0b08"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/amazon_experiment.py",
+      "bytes": 19847,
+      "sha256": "2139dcce322474de34c077d0eb1a012bb74323956f9dd3057a9f563b4de948e0"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/audit.py",
+      "bytes": 4864,
+      "sha256": "d022c4ca39dd69f0caf0a4af07d4727e15f484d35e40745ea10864726b15435c"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/balanced_experiment.py",
+      "bytes": 5396,
+      "sha256": "6108a404e6e64795e53756ff2d87d4cd67ecedfb8c9a256b4266205436205705"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/contracts.py",
+      "bytes": 1084,
+      "sha256": "8b7e221e36971293d49df9172ea8f8ebd081b778000257033af50eedbe33d11e"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/deployment_benchmark.py",
+      "bytes": 4990,
+      "sha256": "b0da248e412c88fe7b911c154ab7ff9ec8ad3e6a2e5a3b689baf12fe4d1d42a8"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/eta_dataset.py",
+      "bytes": 9679,
+      "sha256": "6f07ede46e6e016d35bcfa5b8b0791edb5534bbd015e71f07237fd156763abcb"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/eta_experiment.py",
+      "bytes": 16504,
+      "sha256": "28fc384f8511ad80abff2965c51cf8a23a79501c40df61910a65a4709c6e0bd2"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/graph_ablation.py",
+      "bytes": 7342,
+      "sha256": "70df0b2f39de771ac1b460c8552c52b6c604cb82da972e2f29357f32c52e5bc3"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/integration_experiment.py",
+      "bytes": 4468,
+      "sha256": "3b5ca83580c4c1bc1ac78f8363030f589a96f0474a1331d68028e782ae4e7eac"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/provenance.py",
+      "bytes": 3315,
+      "sha256": "784fe4f7142634ce0d2492214bf96a7e9ed0160bdf1742b6e7b1ae4fadfbf234"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/robustness_diagnostic.py",
+      "bytes": 4080,
+      "sha256": "7892c96b57579b6e9ee96ce369f5f5459cfdb7624d9e93700b19c96db2262ae0"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/rolling_origin.py",
+      "bytes": 5770,
+      "sha256": "0fc0540ceec9168d6c96806541467a516cd69d4363f39b9e483b82bc2d5bae37"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/route_metrics.py",
+      "bytes": 2119,
+      "sha256": "3d1714f43bc4fcdf8c18a7f530d67aa1862e0cd44a512004146e0454264bdf9e"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/routing_baselines.py",
+      "bytes": 3415,
+      "sha256": "37a2cf7061f077f1e3db8852e5c00537027f58a60a2457d7b226acbbeb48c86d"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/routing_stability.py",
+      "bytes": 6131,
+      "sha256": "d89a4936cf2566d029f47dab0799d63b6db2376ab7011aa27185898f1c37fe9e"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/slice_analysis.py",
+      "bytes": 2826,
+      "sha256": "216faefa99d148af7fe1e0b1812990c2f736909c95c854c941b080ebe662b044"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/soft_window_experiment.py",
+      "bytes": 14409,
+      "sha256": "12024c123357fddd2b84e07f3b3591439a12f8f244f423d9c920a5af80021b4a"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/statistical_analysis.py",
+      "bytes": 4459,
+      "sha256": "5846ee18a63a51aac595f7d4698714382abaa6879e835091fd2c5bd99dc33d38"
+    },
+    {
+      "path": "eta_route_optimization/src/eta_route_optimization/validate_protocol.py",
+      "bytes": 3658,
+      "sha256": "5bf9ffa239cdf83b84ba2da1c529e3bfe0690d80d14b7cb42fae77ea424ee5c3"
+    },
+    {
+      "path": "eta_route_optimization/tests/test_amazon_experiment.py",
+      "bytes": 1693,
+      "sha256": "5cce51a8e1cce63db0275692f3dab3d6a458d48ae8d21ff2a6e9a4571a730f3c"
+    },
+    {
+      "path": "eta_route_optimization/tests/test_contracts.py",
+      "bytes": 580,
+      "sha256": "7c76b6e7f7615d388959150d476036011e9a5d6a3a1a2e32a2a6bcd5451ab98f"
+    },
+    {
+      "path": "eta_route_optimization/tests/test_deployment_benchmark.py",
+      "bytes": 394,
+      "sha256": "7dbf5c74ac67baea2cdd6e184f84ea1620c62b9af1648c4a07152e1b96dc45ea"
+    },
+    {
+      "path": "eta_route_optimization/tests/test_eta_dataset.py",
+      "bytes": 3214,
+      "sha256": "2a4f89303f530a96d1f28e7b1be1596b32ecad7a5af0bfde2b3e4fcb57b23751"
+    },
+    {
+      "path": "eta_route_optimization/tests/test_eta_experiment.py",
+      "bytes": 997,
+      "sha256": "2df126f0b5961bf76f5a581862d62d4c9a26c1b9340e74fe4f24cb37ee33a110"
+    },
+    {
+      "path": "eta_route_optimization/tests/test_provenance.py",
+      "bytes": 1806,
+      "sha256": "044fe00259e1a07e1ffeae03a1e90b2c21ed930a4339927d1bde059e3eee70fd"
+    },
+    {
+      "path": "eta_route_optimization/tests/test_route_metrics.py",
+      "bytes": 407,
+      "sha256": "8c6d644478c17416650a74d841b86c259a7d27e3050553604f75ada58118e2ec"
+    },
+    {
+      "path": "eta_route_optimization/tests/test_routing_baselines.py",
+      "bytes": 1124,
+      "sha256": "d97030c02d4dfd174835f2a2dc343713dc5ca447c17d6597a63d40dff3460428"
+    },
+    {
+      "path": "eta_route_optimization/tests/test_statistical_analysis.py",
+      "bytes": 534,
+      "sha256": "22f786f5f3c655fc0ab63e1eedcfa2284ffd6071c6585560bf80dff2d5608744"
+    },
+    {
+      "path": "paper/Nhom09_BaoCao_ETA_ToiUuTuyen.docx",
+      "bytes": 6766385,
+      "sha256": "3a0ae50474e4b229f2538987c676fcd071a6e28bd3dba15c88e078883b4907ea"
+    },
+    {
+      "path": "scripts/download_amazon.sh",
+      "bytes": 434,
+      "sha256": "f7b233fbbc3682d3935ff9ad694a0d89b8c5589fa7856e0247d94a7e9fdae12e"
+    },
+    {
+      "path": "scripts/download_lade_d.sh",
+      "bytes": 644,
+      "sha256": "32d9644db5677b752aa8b8d6fc4b9c3c5fd1cbce7fa111c208861c34eb6d7073"
+    }
+  ]
+}

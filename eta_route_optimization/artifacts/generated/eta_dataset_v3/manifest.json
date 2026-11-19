@@ -1,0 +1,100 @@
+{
+  "source_pattern": "data/raw/lade_d/*.parquet",
+  "query_protocol": "first-delivery-all-observable-tasks-v2",
+  "outcome_based_horizon_filter_applied": false,
+  "cities": [
+    {
+      "path": "data/raw/lade_d/delivery_cq-00000-of-00001-465887add76aeabc.parquet",
+      "raw_rows": 931351,
+      "usable_rows_after_time_checks": 931348,
+      "negative_or_missing_rows_removed": 3,
+      "queries": 57155,
+      "active_rows_before_task_cap": 389568,
+      "labeled_rows_after_operational_cap": 379282,
+      "rows_with_eta_over_120": 197427,
+      "outcome_based_horizon_filter_applied": false
+    },
+    {
+      "path": "data/raw/lade_d/delivery_hz-00000-of-00001-8090c86f64781f71.parquet",
+      "raw_rows": 1861600,
+      "usable_rows_after_time_checks": 1861600,
+      "negative_or_missing_rows_removed": 0,
+      "queries": 68253,
+      "active_rows_before_task_cap": 1071600,
+      "labeled_rows_after_operational_cap": 1032562,
+      "rows_with_eta_over_120": 439316,
+      "outcome_based_horizon_filter_applied": false
+    },
+    {
+      "path": "data/raw/lade_d/delivery_jl-00000-of-00001-a4fbefe3c368583c.parquet",
+      "raw_rows": 31415,
+      "usable_rows_after_time_checks": 31415,
+      "negative_or_missing_rows_removed": 0,
+      "queries": 1770,
+      "active_rows_before_task_cap": 24593,
+      "labeled_rows_after_operational_cap": 23574,
+      "rows_with_eta_over_120": 12979,
+      "outcome_based_horizon_filter_applied": false
+    },
+    {
+      "path": "data/raw/lade_d/delivery_sh-00000-of-00001-ad9a4b1d79823540.parquet",
+      "raw_rows": 1483864,
+      "usable_rows_after_time_checks": 1483864,
+      "negative_or_missing_rows_removed": 0,
+      "queries": 58284,
+      "active_rows_before_task_cap": 443932,
+      "labeled_rows_after_operational_cap": 432884,
+      "rows_with_eta_over_120": 112538,
+      "outcome_based_horizon_filter_applied": false
+    },
+    {
+      "path": "data/raw/lade_d/delivery_yt-00000-of-00001-cc85c1fcb1d10955.parquet",
+      "raw_rows": 206431,
+      "usable_rows_after_time_checks": 206431,
+      "negative_or_missing_rows_removed": 0,
+      "queries": 12350,
+      "active_rows_before_task_cap": 165279,
+      "labeled_rows_after_operational_cap": 154343,
+      "rows_with_eta_over_120": 88353,
+      "outcome_based_horizon_filter_applied": false
+    }
+  ],
+  "splits": {
+    "train": {
+      "rows": 769458,
+      "queries": 92615,
+      "cities": {
+        "Chongqing": 177179,
+        "Hangzhou": 249994,
+        "Jilin": 16624,
+        "Shanghai": 223564,
+        "Yantai": 102097
+      },
+      "path": "eta_route_optimization/artifacts/generated/eta_dataset_v3/train.parquet"
+    },
+    "validation": {
+      "rows": 180719,
+      "queries": 20721,
+      "cities": {
+        "Chongqing": 49987,
+        "Hangzhou": 49984,
+        "Jilin": 6011,
+        "Shanghai": 49994,
+        "Yantai": 24743
+      },
+      "path": "eta_route_optimization/artifacts/generated/eta_dataset_v3/validation.parquet"
+    },
+    "test": {
+      "rows": 178430,
+      "queries": 16346,
+      "cities": {
+        "Chongqing": 49993,
+        "Hangzhou": 49999,
+        "Jilin": 939,
+        "Shanghai": 49996,
+        "Yantai": 27503
+      },
+      "path": "eta_route_optimization/artifacts/generated/eta_dataset_v3/test.parquet"
+    }
+  }
+}

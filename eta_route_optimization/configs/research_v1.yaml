@@ -1,0 +1,64 @@
+protocol_version: "2.0"
+frozen_on: "2026-11-17"
+random_seeds: [17, 29, 43, 71, 101]
+
+data:
+  lade_glob: "../data/raw/lade_d/*.parquet"
+  amazon_training_root: "../data/raw/amazon/almrrc2021-data-training/model_build_inputs"
+  amazon_evaluation_root: "../data/raw/amazon/almrrc2021-data-evaluation"
+  use_amazon_evaluation_for_development: false
+
+splits:
+  lade_primary: "forward_time_by_city"
+  lade_secondary: ["held_out_courier", "leave_one_city_out"]
+  amazon_primary: "grouped_route_development_split"
+  grouping_keys:
+    lade: ["city", "courier_id", "ds_operational_day"]
+    amazon: ["route_id"]
+
+eta:
+  target: "minutes_from_query_time_to_actual_delivery"
+  query_definition: "first completed delivery in each city-courier-day"
+  eligible_pending_rule: "accepted no later than query time and delivered after query; no future-outcome horizon filter"
+  eta_over_120_policy: "retain in the primary cohort; report the <=120-minute slice only as sensitivity"
+  maximum_pending_tasks: 25
+  pending_task_tie_break: ["accept_time", "order_id"]
+  time_split:
+    train: "query_day_from_query_time < 901"
+    validation: "901 <= query_day_from_query_time < 1001"
+    test: "query_day_from_query_time >= 1001"
+  deterministic_row_caps_per_city:
+    train: 250000
+    validation: 50000
+    test: 50000
+  primary_metrics: ["MAE_minutes", "RMSE_minutes"]
+  secondary_metrics: ["ACC_at_20_minutes", "median_absolute_error"]
+  required_baselines: ["historical_median", "speed", "knn", "lightgbm"]
+  model_selection:
+    split: "validation"
+    metric: "mean_query_mae_minutes"
+    test_metrics_used: false
+  lightgbm_max_estimators: 10000
+  rolling_origin_max_estimators: 15000
+  mlp_max_iterations: 250
+
+routing:
+  amazon_cost: "provided_transit_time_seconds_plus_planned_service_time_seconds"
+  required_baselines: ["observed_driver_sequence", "nearest_neighbor", "nearest_neighbor_2opt", "ortools", "ortools_time_windows", "ortools_soft_time_windows"]
+  primary_metrics: ["total_route_time_seconds", "feasibility_rate", "runtime_seconds"]
+  sequence_metrics: ["KRC", "HR_at_3", "LSD", "edit_distance"]
+  amazon_sample: "up to 12 routes per station selected by sha256(route_id), training split only"
+  route_assumption: "closed tour returning to depot; open-path cost reported as sensitivity"
+  baseline_solver_time_limit_seconds: 2
+  soft_window_solver_time_limit_seconds: 1
+  soft_window_repeats_per_route: 3
+  soft_window_penalty_selection: "mean route-median operational cost on 17 calibration routes"
+
+gnn:
+  default_enabled: false
+  candidate: "edge_aware_inductive_graph_encoder_with_pointer_decoder"
+  activation_gate:
+    - "all required baselines are reproduced"
+    - "graph adjacency is built from training data only"
+    - "the decision is made on validation before test evaluation"
+    - "compute budget permits five seeded runs"

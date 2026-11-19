@@ -1,0 +1,30 @@
+{
+  "status": "observed_data_audit_not_model_result",
+  "audit_date": "2026-11-16",
+  "lade_d": {
+    "orders": 4514661,
+    "courier_day_groups": 230315,
+    "cities": {
+      "Chongqing": {"orders": 931351, "couriers": 1494, "regions": 48, "aois": 17451},
+      "Hangzhou": {"orders": 1861600, "couriers": 1392, "regions": 51, "aois": 17714},
+      "Jilin": {"orders": 31415, "couriers": 57, "regions": 4, "aois": 1259},
+      "Shanghai": {"orders": 1483864, "couriers": 1733, "regions": 52, "aois": 15564},
+      "Yantai": {"orders": 206431, "couriers": 205, "regions": 17, "aois": 8163}
+    },
+    "missing_accept_gps_coordinate_pairs": 3377,
+    "negative_accept_to_delivery_records": 3,
+    "median_valid_accept_to_delivery_minutes": 105.0,
+    "median_positive_inter_delivery_minutes": 10.0
+  },
+  "amazon_training": {
+    "routes": 6112,
+    "stations": 17,
+    "package_stops": 904527,
+    "packages": 1457175,
+    "median_stops_per_route": 151.0,
+    "packages_with_complete_time_window": 113993,
+    "complete_time_window_ratio": 0.07822876456156605,
+    "median_route_volume_capacity_ratio": 0.7372444849506699,
+    "routes_with_computed_volume_over_capacity": 12
+  }
+}

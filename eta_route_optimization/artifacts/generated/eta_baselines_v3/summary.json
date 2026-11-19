@@ -1,0 +1,224 @@
+{
+  "protocol": "eta-v2-all-observable-tasks-validation-selection",
+  "train_rows": 769458,
+  "validation_rows": 180719,
+  "test_rows": 178430,
+  "test_queries": 16346,
+  "test_unseen_courier_rows": 55684,
+  "seeds": [
+    17,
+    29,
+    43,
+    71,
+    101
+  ],
+  "model_selection": {
+    "selection_split": "validation",
+    "test_metrics_used_for_selection": false,
+    "selection_metric": "mean_query_mae_minutes",
+    "candidate_validation_query_mae": {
+      "historical_median": 206.86177684744263,
+      "effective_speed": 370.21626114079976,
+      "knn": 247.00997028046666,
+      "lightgbm_ensemble": 187.89505366198802,
+      "mlp_ensemble": 251.4336169309054
+    },
+    "selected_model": "lightgbm_ensemble",
+    "selected_prediction_column": "lightgbm",
+    "lightgbm_best_iterations": {
+      "17": 6003,
+      "29": 4552,
+      "43": 3114,
+      "71": 2455,
+      "101": 8035
+    },
+    "mlp_iterations": {
+      "17": 108,
+      "29": 187,
+      "43": 63,
+      "71": 133,
+      "101": 211
+    }
+  },
+  "timings": {
+    "historical_median_seconds": 0.27463416699902155,
+    "effective_speed_seconds": 0.2725102080148645,
+    "knn_seconds": 24.249826416984433,
+    "lightgbm_seed_17_seconds": 243.19209812500048,
+    "lightgbm_seed_29_seconds": 173.32942416600417,
+    "lightgbm_seed_43_seconds": 146.9096587499953,
+    "lightgbm_seed_71_seconds": 105.77077558398014,
+    "lightgbm_seed_101_seconds": 350.9479192919971,
+    "mlp_seed_17_seconds": 15.141905791009776,
+    "mlp_seed_29_seconds": 27.1674461250077,
+    "mlp_seed_43_seconds": 8.416140749992337,
+    "mlp_seed_71_seconds": 17.04015104199061,
+    "mlp_seed_101_seconds": 29.032302540988894
+  },
+  "validation_overall_metrics": [
+    {
+      "model": "historical_median",
+      "seed": null,
+      "split": "validation",
+      "scope": "overall",
+      "group": "all",
+      "mae_minutes": 151.3063761973,
+      "rmse_minutes": 598.5591819375,
+      "median_absolute_error": 60.0,
+      "acc_at_20": 0.1868480901,
+      "n": 180719
+    },
+    {
+      "model": "effective_speed",
+      "seed": null,
+      "split": "validation",
+      "scope": "overall",
+      "group": "all",
+      "mae_minutes": 329.738614839,
+      "rmse_minutes": 5582.512468522,
+      "median_absolute_error": 62.0057437177,
+      "acc_at_20": 0.2317354567,
+      "n": 180719
+    },
+    {
+      "model": "knn",
+      "seed": null,
+      "split": "validation",
+      "scope": "overall",
+      "group": "all",
+      "mae_minutes": 167.3208420332,
+      "rmse_minutes": 595.9549236672,
+      "median_absolute_error": 70.8548636077,
+      "acc_at_20": 0.1651569564,
+      "n": 180719
+    },
+    {
+      "model": "lightgbm_ensemble",
+      "seed": null,
+      "split": "validation",
+      "scope": "overall",
+      "group": "all",
+      "mae_minutes": 131.7456920807,
+      "rmse_minutes": 582.5959499021,
+      "median_absolute_error": 39.7194830637,
+      "acc_at_20": 0.296919527,
+      "n": 180719
+    },
+    {
+      "model": "mlp_ensemble",
+      "seed": null,
+      "split": "validation",
+      "scope": "overall",
+      "group": "all",
+      "mae_minutes": 176.323823925,
+      "rmse_minutes": 611.7185025055,
+      "median_absolute_error": 81.8849649764,
+      "acc_at_20": 0.1522695455,
+      "n": 180719
+    }
+  ],
+  "overall_metrics": [
+    {
+      "model": "historical_median",
+      "seed": null,
+      "split": "test",
+      "scope": "overall",
+      "group": "all",
+      "mae_minutes": 134.2483130639,
+      "rmse_minutes": 529.9892080556,
+      "median_absolute_error": 59.0,
+      "acc_at_20": 0.1885557361,
+      "n": 178430
+    },
+    {
+      "model": "effective_speed",
+      "seed": null,
+      "split": "test",
+      "scope": "overall",
+      "group": "all",
+      "mae_minutes": 219.0099870627,
+      "rmse_minutes": 2766.4335260548,
+      "median_absolute_error": 59.5377712089,
+      "acc_at_20": 0.2423023034,
+      "n": 178430
+    },
+    {
+      "model": "knn",
+      "seed": null,
+      "split": "test",
+      "scope": "overall",
+      "group": "all",
+      "mae_minutes": 148.8026066389,
+      "rmse_minutes": 524.6182361398,
+      "median_absolute_error": 71.4105662326,
+      "acc_at_20": 0.1637000504,
+      "n": 178430
+    },
+    {
+      "model": "lightgbm_ensemble",
+      "seed": null,
+      "split": "test",
+      "scope": "overall",
+      "group": "all",
+      "mae_minutes": 118.7033568713,
+      "rmse_minutes": 512.8140203792,
+      "median_absolute_error": 40.755312439,
+      "acc_at_20": 0.292871154,
+      "n": 178430
+    },
+    {
+      "model": "mlp_ensemble",
+      "seed": null,
+      "split": "test",
+      "scope": "overall",
+      "group": "all",
+      "mae_minutes": 169.8730253404,
+      "rmse_minutes": 521.4437722535,
+      "median_absolute_error": 88.0137286559,
+      "acc_at_20": 0.1463038727,
+      "n": 178430
+    }
+  ],
+  "leave_one_city_out": [
+    {
+      "held_city": "Chongqing",
+      "mae_minutes": 238.26321732080953,
+      "rmse_minutes": 862.5294438388984,
+      "median_absolute_error": 68.3488315340717,
+      "acc_at_20": 0.18802632368531594,
+      "n": 49993
+    },
+    {
+      "held_city": "Hangzhou",
+      "mae_minutes": 118.16225407826778,
+      "rmse_minutes": 445.47236774576726,
+      "median_absolute_error": 83.30528722775205,
+      "acc_at_20": 0.1006020120402408,
+      "n": 49999
+    },
+    {
+      "held_city": "Jilin",
+      "mae_minutes": 93.58128567240978,
+      "rmse_minutes": 133.9831493967268,
+      "median_absolute_error": 65.04653939549485,
+      "acc_at_20": 0.15761448349307774,
+      "n": 939
+    },
+    {
+      "held_city": "Shanghai",
+      "mae_minutes": 78.25878111248426,
+      "rmse_minutes": 194.4156471088134,
+      "median_absolute_error": 47.146630244794515,
+      "acc_at_20": 0.2208776702136171,
+      "n": 49996
+    },
+    {
+      "held_city": "Yantai",
+      "mae_minutes": 102.50912954599792,
+      "rmse_minutes": 182.86193965429948,
+      "median_absolute_error": 66.04157368096531,
+      "acc_at_20": 0.1661636912336836,
+      "n": 27503
+    }
+  ]
+}

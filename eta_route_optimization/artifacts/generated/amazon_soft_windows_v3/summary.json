@@ -1,0 +1,140 @@
+{
+  "protocol": {
+    "routes": 204,
+    "calibration_routes": 17,
+    "evaluation_routes": 187,
+    "penalty_candidates": [
+      1,
+      10,
+      100
+    ],
+    "selection_metric": "calibration_mean_route_median_closed_duration_plus_package_lateness",
+    "solver_seconds": 1,
+    "repeats_per_route": 3,
+    "fallback": "nearest_neighbor_plus_directed_2opt"
+  },
+  "calibration": [
+    {
+      "penalty": 1,
+      "solved_rate": 1.0,
+      "mean_route_median_operational_cost": 28649.929411764708,
+      "median_route_median_operational_cost": 27407.299999999996,
+      "mean_lateness_seconds": 0.0,
+      "mean_closed_transit_seconds": 10967.68235294118,
+      "attempts": 51
+    },
+    {
+      "penalty": 10,
+      "solved_rate": 1.0,
+      "mean_route_median_operational_cost": 28869.376470588235,
+      "median_route_median_operational_cost": 27407.299999999996,
+      "mean_lateness_seconds": 0.0,
+      "mean_closed_transit_seconds": 10921.686274509806,
+      "attempts": 51
+    },
+    {
+      "penalty": 100,
+      "solved_rate": 1.0,
+      "mean_route_median_operational_cost": 28869.376470588235,
+      "median_route_median_operational_cost": 27407.299999999996,
+      "mean_lateness_seconds": 0.0,
+      "mean_closed_transit_seconds": 10921.713725490197,
+      "attempts": 51
+    }
+  ],
+  "selected_penalty": 1,
+  "all_routes": {
+    "solver_solved_rate": 1.0,
+    "fallback_rate": 0.0
+  },
+  "held_out_evaluation": {
+    "routes": 187,
+    "mean_operational_delta_vs_observed": -761.4914438502682,
+    "route_level_bootstrap_ci95_sensitivity_only": [
+      -1054.4413770053504,
+      -458.1907620320858
+    ],
+    "routes_better_than_observed": 151,
+    "routes_worse_than_observed": 36,
+    "mean_closed_transit_seconds": 10951.313368983958,
+    "mean_lateness_seconds": 0.732085561497334,
+    "mean_late_packages": 0.0213903743315508,
+    "mean_runtime_seconds": 1.00103929166758
+  },
+  "solver_stability": {
+    "routes": 204,
+    "routes_with_identical_sequence_all_repeats": 189,
+    "routes_with_identical_cost_all_repeats": 190,
+    "mean_within_route_operational_cost_range": 11.522058823529537,
+    "maximum_within_route_operational_cost_range": 1106.5
+  },
+  "operational_cost_lateness_weight_sensitivity": {
+    "0.5": {
+      "mean_route_delta": -587.4957219251344,
+      "equal_station_mean_delta": -587.4957219251344,
+      "stations_better_than_observed": 14,
+      "stations_worse_than_observed": 3
+    },
+    "1.0": {
+      "mean_route_delta": -761.4914438502682,
+      "equal_station_mean_delta": -761.4914438502682,
+      "stations_better_than_observed": 14,
+      "stations_worse_than_observed": 3
+    },
+    "2.0": {
+      "mean_route_delta": -1109.4828877005355,
+      "equal_station_mean_delta": -1109.4828877005357,
+      "stations_better_than_observed": 15,
+      "stations_worse_than_observed": 2
+    }
+  },
+  "primary_station_cluster_inference": {
+    "stations": 17,
+    "routes_per_station": {
+      "DAU1": 11,
+      "DBO1": 11,
+      "DBO2": 11,
+      "DBO3": 11,
+      "DCH1": 11,
+      "DCH2": 11,
+      "DCH3": 11,
+      "DCH4": 11,
+      "DLA3": 11,
+      "DLA4": 11,
+      "DLA5": 11,
+      "DLA7": 11,
+      "DLA8": 11,
+      "DLA9": 11,
+      "DSE2": 11,
+      "DSE4": 11,
+      "DSE5": 11
+    },
+    "equal_station_mean_operational_delta": -761.4914438502682,
+    "station_cluster_bootstrap_ci95": [
+      -1157.7862433155096,
+      -322.42163101604245
+    ],
+    "stations_better_than_observed": 14,
+    "stations_worse_than_observed": 3,
+    "exact_sign_test_two_sided_p": 0.012725830078125,
+    "leave_one_station_out_mean_delta": {
+      "DAU1": -767.7960227272736,
+      "DBO1": -711.5062500000006,
+      "DBO2": -741.922727272728,
+      "DBO3": -751.5653409090914,
+      "DCH1": -692.9670454545459,
+      "DCH2": -883.8585227272731,
+      "DCH3": -702.9164772727281,
+      "DCH4": -687.5602272727283,
+      "DLA3": -720.5744318181823,
+      "DLA4": -860.1238636363646,
+      "DLA5": -763.3181818181829,
+      "DLA7": -759.4676136363643,
+      "DLA8": -733.99090909091,
+      "DLA9": -773.1312500000009,
+      "DSE2": -836.6079545454551,
+      "DSE4": -770.6596590909098,
+      "DSE5": -787.3880681818189
+    }
+  }
+}

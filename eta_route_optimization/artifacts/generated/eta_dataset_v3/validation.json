@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "checks": {
+    "train": {
+      "rows": 769458,
+      "queries": 92615,
+      "maximum_tasks_per_query": 25,
+      "minimum_eta": 5.0,
+      "maximum_eta": 166418.0,
+      "rows_with_eta_over_120": 319606
+    },
+    "validation": {
+      "rows": 180719,
+      "queries": 20721,
+      "maximum_tasks_per_query": 25,
+      "minimum_eta": 5.0,
+      "maximum_eta": 99342.0,
+      "rows_with_eta_over_120": 80950
+    },
+    "test": {
+      "rows": 178430,
+      "queries": 16346,
+      "maximum_tasks_per_query": 25,
+      "minimum_eta": 5.0,
+      "maximum_eta": 54549.0,
+      "rows_with_eta_over_120": 76701
+    }
+  },
+  "query_sets_disjoint": true,
+  "sample_sets_disjoint": true,
+  "outcome_based_horizon_filter_applied": false
+}

@@ -1,0 +1,21 @@
+.DS_Store
+.venv*/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+data/raw/**
+!data/raw/.gitkeep
+
+# Large, reproducible row-level artifacts and trained models.
+*.parquet
+eta_route_optimization/artifacts/generated/**/lightgbm_seed*.txt
+eta_route_optimization/artifacts/generated/**/*predictions*
+eta_route_optimization/artifacts/generated/**/paired_query_errors*
+eta_route_optimization/artifacts/generated/**/query_metrics*
+
+# Local report-rendering by-products.
+paper/word_assets_eta/
+paper/*.pdf

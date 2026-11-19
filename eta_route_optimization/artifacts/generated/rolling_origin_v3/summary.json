@@ -1,0 +1,338 @@
+{
+  "test_october_used": false,
+  "seed": 17,
+  "folds": [
+    {
+      "fold": "july",
+      "candidate": "unweighted",
+      "fit_rows": 278974,
+      "inner_validation_rows": 41190,
+      "evaluation_rows": 217382,
+      "best_iteration": 5127,
+      "micro": {
+        "mae_minutes": 118.93036256554792,
+        "rmse_minutes": 941.7476930416503,
+        "median_absolute_error": 38.969966378667166,
+        "acc_at_20": 0.29065884019836047,
+        "n": 217382
+      },
+      "macro_city_mae": 116.752833375562,
+      "by_city": {
+        "Chongqing": {
+          "mae_minutes": 254.48571313141028,
+          "rmse_minutes": 1705.8377617310439,
+          "median_absolute_error": 57.10497287234608,
+          "acc_at_20": 0.19183952990036893,
+          "n": 45267
+        },
+        "Hangzhou": {
+          "mae_minutes": 94.86013401165393,
+          "rmse_minutes": 896.6075177928736,
+          "median_absolute_error": 37.76890054633648,
+          "acc_at_20": 0.2957618923357944,
+          "n": 65147
+        },
+        "Jilin": {
+          "mae_minutes": 78.49364160346921,
+          "rmse_minutes": 131.41824103947138,
+          "median_absolute_error": 57.36065261614311,
+          "acc_at_20": 0.17383281048163868,
+          "n": 5419
+        },
+        "Shanghai": {
+          "mae_minutes": 74.30316817769572,
+          "rmse_minutes": 323.3810564129891,
+          "median_absolute_error": 28.7676973479239,
+          "acc_at_20": 0.37336398547506466,
+          "n": 76558
+        },
+        "Yantai": {
+          "mae_minutes": 81.62150995358087,
+          "rmse_minutes": 154.98919794079177,
+          "median_absolute_error": 48.76413357773555,
+          "acc_at_20": 0.2283221959905566,
+          "n": 24991
+        }
+      }
+    },
+    {
+      "fold": "july",
+      "candidate": "city_balanced",
+      "fit_rows": 278974,
+      "inner_validation_rows": 41190,
+      "evaluation_rows": 217382,
+      "best_iteration": 5244,
+      "micro": {
+        "mae_minutes": 121.0375510798073,
+        "rmse_minutes": 945.0149406151944,
+        "median_absolute_error": 40.305419188804834,
+        "acc_at_20": 0.28086042082601137,
+        "n": 217382
+      },
+      "macro_city_mae": 119.03309234027836,
+      "by_city": {
+        "Chongqing": {
+          "mae_minutes": 258.13359728225043,
+          "rmse_minutes": 1712.24650813384,
+          "median_absolute_error": 60.439942496511236,
+          "acc_at_20": 0.17851856760995868,
+          "n": 45267
+        },
+        "Hangzhou": {
+          "mae_minutes": 97.94925036254777,
+          "rmse_minutes": 898.4265920643892,
+          "median_absolute_error": 40.510149447846686,
+          "acc_at_20": 0.27092575252889617,
+          "n": 65147
+        },
+        "Jilin": {
+          "mae_minutes": 79.7567874119938,
+          "rmse_minutes": 131.59974991283542,
+          "median_absolute_error": 58.965889303399535,
+          "acc_at_20": 0.17457095405056283,
+          "n": 5419
+        },
+        "Shanghai": {
+          "mae_minutes": 74.30018815570722,
+          "rmse_minutes": 325.4594843650695,
+          "median_absolute_error": 28.14498958813885,
+          "acc_at_20": 0.37965986572272004,
+          "n": 76558
+        },
+        "Yantai": {
+          "mae_minutes": 85.0256384888926,
+          "rmse_minutes": 159.0948655753876,
+          "median_absolute_error": 51.62963312693702,
+          "acc_at_20": 0.21251650594213917,
+          "n": 24991
+        }
+      }
+    },
+    {
+      "fold": "august",
+      "candidate": "unweighted",
+      "fit_rows": 484909,
+      "inner_validation_rows": 52637,
+      "evaluation_rows": 231912,
+      "best_iteration": 9841,
+      "micro": {
+        "mae_minutes": 92.04125311213637,
+        "rmse_minutes": 482.42171400999655,
+        "median_absolute_error": 34.31728361742145,
+        "acc_at_20": 0.3307935768739867,
+        "n": 231912
+      },
+      "macro_city_mae": 97.81473925715348,
+      "by_city": {
+        "Chongqing": {
+          "mae_minutes": 199.0514318029894,
+          "rmse_minutes": 830.0741778370975,
+          "median_absolute_error": 52.03923214549599,
+          "acc_at_20": 0.22265572447194942,
+          "n": 37165
+        },
+        "Hangzhou": {
+          "mae_minutes": 81.63911704690078,
+          "rmse_minutes": 604.4044120147817,
+          "median_absolute_error": 36.761715609920955,
+          "acc_at_20": 0.3024963707267086,
+          "n": 70262
+        },
+        "Jilin": {
+          "mae_minutes": 65.9477896256161,
+          "rmse_minutes": 100.49022503739212,
+          "median_absolute_error": 43.46129236223712,
+          "acc_at_20": 0.2614075792730085,
+          "n": 6465
+        },
+        "Shanghai": {
+          "mae_minutes": 61.569960033865414,
+          "rmse_minutes": 151.1488551274161,
+          "median_absolute_error": 24.59471996075594,
+          "acc_at_20": 0.4281450595270752,
+          "n": 91135
+        },
+        "Yantai": {
+          "mae_minutes": 80.86539777639564,
+          "rmse_minutes": 143.17367665940867,
+          "median_absolute_error": 47.646215419747705,
+          "acc_at_20": 0.24091500836897897,
+          "n": 26885
+        }
+      }
+    },
+    {
+      "fold": "august",
+      "candidate": "city_balanced",
+      "fit_rows": 484909,
+      "inner_validation_rows": 52637,
+      "evaluation_rows": 231912,
+      "best_iteration": 9350,
+      "micro": {
+        "mae_minutes": 93.70533185242978,
+        "rmse_minutes": 485.1085237535396,
+        "median_absolute_error": 35.6566331913007,
+        "acc_at_20": 0.32090189382179446,
+        "n": 231912
+      },
+      "macro_city_mae": 99.49880989927911,
+      "by_city": {
+        "Chongqing": {
+          "mae_minutes": 202.21147314139137,
+          "rmse_minutes": 836.5576182345934,
+          "median_absolute_error": 53.59396171362607,
+          "acc_at_20": 0.21049374411408583,
+          "n": 37165
+        },
+        "Hangzhou": {
+          "mae_minutes": 84.728343596573,
+          "rmse_minutes": 605.9205807547603,
+          "median_absolute_error": 39.73570459678364,
+          "acc_at_20": 0.27899860522046055,
+          "n": 70262
+        },
+        "Jilin": {
+          "mae_minutes": 66.38572416840128,
+          "rmse_minutes": 100.22986816325549,
+          "median_absolute_error": 44.90585497480427,
+          "acc_at_20": 0.2612529002320186,
+          "n": 6465
+        },
+        "Shanghai": {
+          "mae_minutes": 61.60100518734333,
+          "rmse_minutes": 153.1094668329088,
+          "median_absolute_error": 24.66340506484749,
+          "acc_at_20": 0.4279585230701706,
+          "n": 91135
+        },
+        "Yantai": {
+          "mae_minutes": 82.56750340268658,
+          "rmse_minutes": 145.5342803059142,
+          "median_absolute_error": 49.2422807689275,
+          "acc_at_20": 0.2344801934164032,
+          "n": 26885
+        }
+      }
+    },
+    {
+      "fold": "september",
+      "candidate": "city_balanced",
+      "fit_rows": 716169,
+      "inner_validation_rows": 53289,
+      "evaluation_rows": 180719,
+      "best_iteration": 3530,
+      "micro": {
+        "mae_minutes": 133.93493068833345,
+        "rmse_minutes": 585.8116085268041,
+        "median_absolute_error": 41.38551284243236,
+        "acc_at_20": 0.28481786641139006,
+        "n": 180719
+      },
+      "macro_city_mae": 116.23308955661166,
+      "by_city": {
+        "Chongqing": {
+          "mae_minutes": 275.179539886061,
+          "rmse_minutes": 868.3046123207826,
+          "median_absolute_error": 66.4979866196666,
+          "acc_at_20": 0.177686198411587,
+          "n": 49987
+        },
+        "Hangzhou": {
+          "mae_minutes": 86.5661727255602,
+          "rmse_minutes": 636.5647474371284,
+          "median_absolute_error": 40.84336597525157,
+          "acc_at_20": 0.2711067541613316,
+          "n": 49984
+        },
+        "Jilin": {
+          "mae_minutes": 62.39576660734691,
+          "rmse_minutes": 101.90863605965926,
+          "median_absolute_error": 39.099370793993856,
+          "acc_at_20": 0.28963566794210616,
+          "n": 6011
+        },
+        "Shanghai": {
+          "mae_minutes": 73.73801013852751,
+          "rmse_minutes": 244.39769554078293,
+          "median_absolute_error": 25.015796355939543,
+          "acc_at_20": 0.423610833299996,
+          "n": 49994
+        },
+        "Yantai": {
+          "mae_minutes": 83.28595842556277,
+          "rmse_minutes": 203.79264898081226,
+          "median_absolute_error": 45.46838938154377,
+          "acc_at_20": 0.2473426827789678,
+          "n": 24743
+        }
+      }
+    },
+    {
+      "fold": "september",
+      "candidate": "unweighted",
+      "fit_rows": 716169,
+      "inner_validation_rows": 53289,
+      "evaluation_rows": 180719,
+      "best_iteration": 14409,
+      "micro": {
+        "mae_minutes": 132.31014842652414,
+        "rmse_minutes": 581.4680029283057,
+        "median_absolute_error": 39.91793744707917,
+        "acc_at_20": 0.29681439140322824,
+        "n": 180719
+      },
+      "macro_city_mae": 114.92328325800463,
+      "by_city": {
+        "Chongqing": {
+          "mae_minutes": 274.35154910198906,
+          "rmse_minutes": 859.6838346067958,
+          "median_absolute_error": 66.06820257557551,
+          "acc_at_20": 0.18134715025906736,
+          "n": 49987
+        },
+        "Hangzhou": {
+          "mae_minutes": 83.65720610531474,
+          "rmse_minutes": 634.9234268717063,
+          "median_absolute_error": 38.35494810204626,
+          "acc_at_20": 0.29157330345710625,
+          "n": 49984
+        },
+        "Jilin": {
+          "mae_minutes": 62.763633916366416,
+          "rmse_minutes": 102.39713427903088,
+          "median_absolute_error": 38.5163614725773,
+          "acc_at_20": 0.29246381633671603,
+          "n": 6011
+        },
+        "Shanghai": {
+          "mae_minutes": 72.53534794326907,
+          "rmse_minutes": 242.2698651130484,
+          "median_absolute_error": 24.176332772835103,
+          "acc_at_20": 0.43609233107972956,
+          "n": 49994
+        },
+        "Yantai": {
+          "mae_minutes": 81.3086792230838,
+          "rmse_minutes": 202.18374536301246,
+          "median_absolute_error": 43.827100724833564,
+          "acc_at_20": 0.26031604898355093,
+          "n": 24743
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "city_balanced": {
+      "macro_city_mae_mean": 111.58833059872303,
+      "macro_city_mae_std": 10.563019783842488,
+      "micro_mae_mean": 116.2259378735235,
+      "micro_mae_std": 20.54188092311897
+    },
+    "unweighted": {
+      "macro_city_mae_mean": 109.83028529690671,
+      "macro_city_mae_std": 10.445899835975629,
+      "micro_mae_mean": 114.42725470140282,
+      "micro_mae_std": 20.508643733493795
+    }
+  }
+}
