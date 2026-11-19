@@ -1,6 +1,6 @@
 {
   "format": "lastmile-research-github-release-v1",
-  "generated_at_utc": "2026-11-19T05:41:23.008534+00:00",
+  "generated_at_utc": "2026-11-19T06:04:16.064314+00:00",
   "scope": "Current research source, documentation, DOCX report, clean report template, tests, download scripts, and aggregate claim artifacts. Raw data and reproducible row-level artifacts are excluded.",
   "file_count": 85,
   "files": [
@@ -251,8 +251,8 @@
     },
     {
       "path": "eta_route_optimization/pyproject.toml",
-      "bytes": 1562,
-      "sha256": "36b2125466ce80a1e3939531d3f1af405a340f59b984eb333b131d24b6f11b27"
+      "bytes": 1579,
+      "sha256": "eb6c8784e31f9d16661eb66299543c4e0b5bbdcac754b3d651d274d29e8ed331"
     },
     {
       "path": "eta_route_optimization/references.bib",
@@ -261,8 +261,8 @@
     },
     {
       "path": "eta_route_optimization/scripts/generate_research_paper.py",
-      "bytes": 93117,
-      "sha256": "85b31feee4e3da1a3107b7e6038fbce88c8d1816d486b17b8bd73efcb012de74"
+      "bytes": 93356,
+      "sha256": "b7b91f8e6fb5a3dcd632315053e4ff126ce3b5ab5803f460dc18dc87b72b384c"
     },
     {
       "path": "eta_route_optimization/scripts/reproduce_v3.sh",
@@ -416,8 +416,8 @@
     },
     {
       "path": "paper/Nhom09_BaoCao_ETA_ToiUuTuyen.docx",
-      "bytes": 6766385,
-      "sha256": "3a0ae50474e4b229f2538987c676fcd071a6e28bd3dba15c88e078883b4907ea"
+      "bytes": 6888563,
+      "sha256": "603d3380b881f3d9a8ce03c4f481b34e4c7e86a87c7507545796a39ebdc5fca1"
     },
     {
       "path": "scripts/download_amazon.sh",

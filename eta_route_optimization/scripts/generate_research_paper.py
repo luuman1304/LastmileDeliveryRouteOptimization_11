@@ -281,10 +281,20 @@ def svg_to_png(svg: str, name: str, width: int = 1400) -> Path:
     svg_path = ASSET_DIR / f"{name}.svg"
     png_path = ASSET_DIR / f"{name}.png"
     svg_path.write_text(svg, encoding="utf-8")
-    subprocess.run(
-        ["/opt/homebrew/bin/rsvg-convert", "-w", str(width), "-o", str(png_path), str(svg_path)],
-        check=True,
-    )
+    converter = shutil.which("rsvg-convert")
+    if converter:
+        subprocess.run(
+            [converter, "-w", str(width), "-o", str(png_path), str(svg_path)],
+            check=True,
+        )
+    else:
+        import cairosvg
+
+        cairosvg.svg2png(
+            bytestring=svg.encode("utf-8"),
+            write_to=str(png_path),
+            output_width=width,
+        )
     return png_path
 
 
