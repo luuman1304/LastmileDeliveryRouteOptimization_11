@@ -16,6 +16,5 @@ eta_route_optimization/artifacts/generated/**/*predictions*
 eta_route_optimization/artifacts/generated/**/paired_query_errors*
 eta_route_optimization/artifacts/generated/**/query_metrics*
 
-# Local report-rendering by-products.
-paper/word_assets_eta/
-paper/*.pdf
+# Local report output and rendering by-products.
+paper/

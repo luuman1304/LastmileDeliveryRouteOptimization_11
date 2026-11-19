@@ -9,14 +9,13 @@ soft-window v2 cũ không thuộc release.
 
 - `eta_route_optimization/`: source, cấu hình, test, tài liệu và artifact tổng
   hợp dùng trực tiếp trong báo cáo.
-- `paper/Nhom09_BaoCao_ETA_ToiUuTuyen.docx`: báo cáo DOCX hiện hành, đã cập nhật
-  Chương 1 với giải thích ETA, bằng chứng định lượng và business use case.
 - `scripts/`: script tải LaDe-D và Amazon từ nguồn công khai.
 - `data/raw/`: vị trí dữ liệu đầu vào; dữ liệu thô không được commit.
 
-PDF không được đưa vào release này vì yêu cầu cập nhật gần nhất chỉ xuất lại
-DOCX. Baseline `amazon_baselines_v2` vẫn được giữ vì đây là baseline hiện hành
-không thay đổi và được báo cáo dẫn chiếu.
+Thư mục `paper/` và các bản DOCX/PDF kết xuất không thuộc repository. Generator
+và template sạch vẫn được lưu để tái tạo báo cáo cục bộ. Baseline
+`amazon_baselines_v2` được giữ vì đây là baseline hiện hành không thay đổi và
+được tài liệu nghiên cứu dẫn chiếu.
 
 ## Kết quả đã khóa
 

@@ -1,8 +1,8 @@
 {
   "format": "lastmile-research-github-release-v1",
-  "generated_at_utc": "2026-11-19T06:04:16.064314+00:00",
-  "scope": "Current research source, documentation, DOCX report, clean report template, tests, download scripts, and aggregate claim artifacts. Raw data and reproducible row-level artifacts are excluded.",
-  "file_count": 85,
+  "generated_at_utc": "2026-11-19T06:09:17.229296+00:00",
+  "scope": "Current research source, documentation, clean report template, tests, download scripts, and aggregate claim artifacts. Raw data, rendered paper output, and reproducible row-level artifacts are excluded.",
+  "file_count": 84,
   "files": [
     {
       "path": ".gitattributes",
@@ -16,13 +16,13 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 513,
-      "sha256": "fc3ffce1c60cf30c393d50b4c7f48cd9dda7436cc5aad1ddf8a98d1d6a9ec1bb"
+      "bytes": 496,
+      "sha256": "265f7c5e30d58d53e72273a9f8b82f4be907915b5440d2c92214fbb62b38f292"
     },
     {
       "path": "README.md",
-      "bytes": 2778,
-      "sha256": "d8a82a89ae417cc656ae383438f943c4dc4ac5b654b366e79d27be6cb80c730b"
+      "bytes": 2666,
+      "sha256": "8bf531619029fc727eeba84baabc069513f6416379332cca767e7887594c2f7f"
     },
     {
       "path": "data/README.md",
@@ -41,8 +41,8 @@
     },
     {
       "path": "eta_route_optimization/README.md",
-      "bytes": 3870,
-      "sha256": "c32132308026e2f77cdb6316098627250bd546ec188e1671ae2416fcfa09ff5a"
+      "bytes": 3964,
+      "sha256": "85ba98ab637fda8a26d5cb28c08b9ea12e1e22a7fa89448b21f6666358297f7e"
     },
     {
       "path": "eta_route_optimization/TASKS.md",
@@ -413,11 +413,6 @@
       "path": "eta_route_optimization/tests/test_statistical_analysis.py",
       "bytes": 534,
       "sha256": "22f786f5f3c655fc0ab63e1eedcfa2284ffd6071c6585560bf80dff2d5608744"
-    },
-    {
-      "path": "paper/Nhom09_BaoCao_ETA_ToiUuTuyen.docx",
-      "bytes": 6888563,
-      "sha256": "603d3380b881f3d9a8ce03c4f481b34e4c7e86a87c7507545796a39ebdc5fca1"
     },
     {
       "path": "scripts/download_amazon.sh",

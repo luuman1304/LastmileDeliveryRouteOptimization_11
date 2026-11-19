@@ -61,12 +61,13 @@ không được dùng cho kết luận cuối. Lệnh tái lập chuẩn là
 
 ## Phạm vi bản phát hành GitHub
 
-Repository công khai lưu source, cấu hình, test, tài liệu, báo cáo DOCX, template
-đã làm sạch và các artifact tổng hợp dùng trực tiếp cho kết luận. Dữ liệu thô,
+Repository công khai lưu source, cấu hình, test, tài liệu, template báo cáo đã
+làm sạch và các artifact tổng hợp dùng trực tiếp cho kết luận. Dữ liệu thô,
 virtualenv, cache, dataset/prediction cấp dòng và model nhị phân có thể tái tạo
 không được commit nhằm tránh nhân bản dữ liệu và làm repository quá lớn. Hai
 script ở thư mục `../scripts/` tải dữ liệu công khai về đúng cấu trúc
 `data/raw/`; `scripts/reproduce_v3.sh` tái tạo đầy đủ artifact cấp dòng tại máy
 người dùng. Baseline Amazon mang hậu tố `v2` được giữ vì đây là baseline hiện
 hành không thay đổi; các artifact ETA và soft-window v2 cũ không thuộc bản phát
-hành.
+hành. Thư mục `paper/` là đầu ra cục bộ của generator và không được đưa lên
+GitHub.
