@@ -24,12 +24,8 @@ Các điều kiện phát hành chính:
   và city-balanced, 15.000 cho rolling-origin.
 - Bộ giải deadline mềm chạy ba lần trên cả 204 tuyến; calibration tách khỏi 187
   tuyến evaluation.
-- Unit test, compile, lint, JSON/YAML, DOCX/PDF và checksum được kiểm tra trước
-  khi chốt báo cáo.
+- Unit test, compile, lint, JSON/YAML và checksum được kiểm tra trước khi chốt
+  kết quả.
 
-`MANIFEST.json` phải được tạo sau cùng; nếu source, artifact hoặc báo cáo thay
-đổi thì manifest cũ không còn hợp lệ và phải tạo lại.
-
-Script sinh bản DOCX từ artifact đã xác minh. Bản PDF là bản phát hành dẫn xuất;
-cần xuất lại từ DOCX bằng Word hoặc một bộ kết xuất tương thích rồi chạy lại
-manifest nếu PDF thay đổi.
+`MANIFEST.json` phải được tạo sau cùng; nếu source hoặc artifact thay đổi thì
+manifest cũ không còn hợp lệ và phải tạo lại.

@@ -1,28 +1,28 @@
 {
   "format": "lastmile-research-github-release-v1",
-  "generated_at_utc": "2026-11-19T06:12:23.374173+00:00",
-  "scope": "Current research source, documentation, clean report template, tests, download scripts, and aggregate claim artifacts. Raw data, rendered paper output, and reproducible row-level artifacts are excluded.",
-  "file_count": 84,
+  "generated_at_utc": "2026-11-19T06:26:23.354499+00:00",
+  "scope": "Research source, configuration, tests, documentation, download scripts, and aggregate claim artifacts. Raw data and reproducible row-level artifacts are excluded.",
+  "file_count": 81,
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 158,
-      "sha256": "d5234c8efb879a45b77c30dee28a8b39ee27db6d598eb828c7268111ab1fc517"
+      "bytes": 144,
+      "sha256": "447d24860b9a2933a827d6706b89c768fc6c497f0e2524653d3bfd87cf3750aa"
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 887,
-      "sha256": "06610b00ba6ae0520fe135c8383d65e6883ee9a9e4590c535d0661538cef138e"
+      "bytes": 733,
+      "sha256": "031ad97c4872ed9b1d4354cdde96c80bee533d25a8717d77c470577c36004ec7"
     },
     {
       "path": ".gitignore",
-      "bytes": 496,
-      "sha256": "265f7c5e30d58d53e72273a9f8b82f4be907915b5440d2c92214fbb62b38f292"
+      "bytes": 439,
+      "sha256": "c9949c467e37dc0a74a9b73263b6412fae2fc8842eb47aef3e10509cee9d9847"
     },
     {
       "path": "README.md",
-      "bytes": 2666,
-      "sha256": "8bf531619029fc727eeba84baabc069513f6416379332cca767e7887594c2f7f"
+      "bytes": 2493,
+      "sha256": "0b99ee0e3908701af1f5e183c7b9be5bb0f6033480fe8c115145ae49e5bf1172"
     },
     {
       "path": "data/README.md",
@@ -41,8 +41,8 @@
     },
     {
       "path": "eta_route_optimization/README.md",
-      "bytes": 3964,
-      "sha256": "85ba98ab637fda8a26d5cb28c08b9ea12e1e22a7fa89448b21f6666358297f7e"
+      "bytes": 3827,
+      "sha256": "a1b017a2dc9eba9fd6518bd33051815a55edcd73482d69af7c7d98717aa9a613"
     },
     {
       "path": "eta_route_optimization/TASKS.md",
@@ -180,16 +180,6 @@
       "sha256": "ff8b15209c915a2ca5f876f337baf583f830f74d1c2f1898a18f7309636831d3"
     },
     {
-      "path": "eta_route_optimization/assets/report_template.docx",
-      "bytes": 6744874,
-      "sha256": "20951ab36950c5715a5963cc878bd56322f89d3e1022333bb9d53fb59b5873a1"
-    },
-    {
-      "path": "eta_route_optimization/configs/report_page_map_v3.json",
-      "bytes": 3332,
-      "sha256": "f7277a82995b06afb970b944723278bc217c885d8cff806bcf8773526346c752"
-    },
-    {
       "path": "eta_route_optimization/configs/research_v1.yaml",
       "bytes": 2838,
       "sha256": "7044a6888ed6e1e8fc13c7262979dbb996a77e19177d3843c017d7afd174ec24"
@@ -231,8 +221,8 @@
     },
     {
       "path": "eta_route_optimization/docs/REPRODUCIBILITY.md",
-      "bytes": 1901,
-      "sha256": "6eecf2dd266386573dca4787712abcc51ff8caf248d2a92e5cb70fb6894f17b4"
+      "bytes": 1644,
+      "sha256": "8e3745694e09f566751cd5db1b0a587167d78a252715b08d19221cf80a09a50c"
     },
     {
       "path": "eta_route_optimization/docs/RESEARCH_PROTOCOL.md",
@@ -251,8 +241,8 @@
     },
     {
       "path": "eta_route_optimization/pyproject.toml",
-      "bytes": 1579,
-      "sha256": "eb6c8784e31f9d16661eb66299543c4e0b5bbdcac754b3d651d274d29e8ed331"
+      "bytes": 1542,
+      "sha256": "a023d3054e604c5b34682c52f9f08bf4e3a2372bd7f6fcc416255d386d6e6177"
     },
     {
       "path": "eta_route_optimization/references.bib",
@@ -260,14 +250,9 @@
       "sha256": "bd057c0c792354015fc9aaa7a8afbe465314998ccf51c6a91227d5e4ed51b048"
     },
     {
-      "path": "eta_route_optimization/scripts/generate_research_paper.py",
-      "bytes": 93356,
-      "sha256": "b7b91f8e6fb5a3dcd632315053e4ff126ce3b5ab5803f460dc18dc87b72b384c"
-    },
-    {
       "path": "eta_route_optimization/scripts/reproduce_v3.sh",
-      "bytes": 2779,
-      "sha256": "b8a18ef061f3618fa16b82c6ad2628361946f5711382df3528a923387df35024"
+      "bytes": 2719,
+      "sha256": "c393628bad2585d25c1b0e97ce58c7b5f61474c57d96651b7bdd3a93210916fd"
     },
     {
       "path": "eta_route_optimization/src/eta_route_optimization/__init__.py",
@@ -321,8 +306,8 @@
     },
     {
       "path": "eta_route_optimization/src/eta_route_optimization/provenance.py",
-      "bytes": 3315,
-      "sha256": "784fe4f7142634ce0d2492214bf96a7e9ed0160bdf1742b6e7b1ae4fadfbf234"
+      "bytes": 2828,
+      "sha256": "660f2495b5960ddef1d06153c3c06d21bef34beae3faca24d662e1b2d2e34bed"
     },
     {
       "path": "eta_route_optimization/src/eta_route_optimization/robustness_diagnostic.py",
@@ -396,8 +381,8 @@
     },
     {
       "path": "eta_route_optimization/tests/test_provenance.py",
-      "bytes": 1806,
-      "sha256": "044fe00259e1a07e1ffeae03a1e90b2c21ed930a4339927d1bde059e3eee70fd"
+      "bytes": 1069,
+      "sha256": "971c99cb0b13a8403ddefb668ba5d42e4572de379a8c946a7693ff82d8069553"
     },
     {
       "path": "eta_route_optimization/tests/test_route_metrics.py",

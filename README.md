@@ -12,10 +12,8 @@ soft-window v2 cũ không thuộc release.
 - `scripts/`: script tải LaDe-D và Amazon từ nguồn công khai.
 - `data/raw/`: vị trí dữ liệu đầu vào; dữ liệu thô không được commit.
 
-Thư mục `paper/` và các bản DOCX/PDF kết xuất không thuộc repository. Generator
-và template sạch vẫn được lưu để tái tạo báo cáo cục bộ. Baseline
-`amazon_baselines_v2` được giữ vì đây là baseline hiện hành không thay đổi và
-được tài liệu nghiên cứu dẫn chiếu.
+Baseline `amazon_baselines_v2` được giữ vì đây là baseline hiện hành không thay
+đổi và được tài liệu nghiên cứu dẫn chiếu.
 
 ## Kết quả đã khóa
 

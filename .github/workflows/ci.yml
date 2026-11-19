@@ -24,5 +24,3 @@ jobs:
         run: python -m ruff check --no-cache eta_route_optimization
       - name: Compile
         run: python -m compileall -q eta_route_optimization/src eta_route_optimization/scripts
-      - name: Verify report generator against committed aggregate artifacts
-        run: python eta_route_optimization/scripts/generate_research_paper.py

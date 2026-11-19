@@ -15,6 +15,3 @@ eta_route_optimization/artifacts/generated/**/lightgbm_seed*.txt
 eta_route_optimization/artifacts/generated/**/*predictions*
 eta_route_optimization/artifacts/generated/**/paired_query_errors*
 eta_route_optimization/artifacts/generated/**/query_metrics*
-
-# Local report output and rendering by-products.
-paper/

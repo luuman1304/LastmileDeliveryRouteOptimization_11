@@ -52,6 +52,5 @@ export LOKY_MAX_CPU_COUNT=${LOKY_MAX_CPU_COUNT:-8}
 "$PYTHON_BIN" -m pytest -q "$PROJECT/tests"
 "$PYTHON_BIN" -m compileall -q "$PROJECT/src" "$PROJECT/scripts"
 "$PYTHON_BIN" -m ruff check "$PROJECT"
-"$PYTHON_BIN" "$PROJECT/scripts/generate_research_paper.py"
 "$PYTHON_BIN" -m eta_route_optimization.provenance \
   --project "$PROJECT" --output "$ARTIFACTS/MANIFEST.json"

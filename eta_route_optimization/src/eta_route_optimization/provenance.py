@@ -43,12 +43,6 @@ def build(project: Path) -> dict:
         for path in (project / "artifacts" / "generated").rglob("*")
         if path.is_file() and path.name != "MANIFEST.json"
     ]
-    report_dir = project.parent / "paper"
-    reports = [
-        report_dir / "Nhom09_BaoCao_ETA_ToiUuTuyen.docx",
-        report_dir / "Nhom09_BaoCao_ETA_ToiUuTuyen.pdf",
-    ]
-    reports = [path for path in reports if path.is_file()]
     package_versions = {}
     for package in PACKAGES:
         try:
@@ -63,14 +57,6 @@ def build(project: Path) -> dict:
         "random_seeds": [17, 29, 43, 71, 101],
         "source_and_document_files": [describe(path, project) for path in sorted(tracked)],
         "generated_artifacts": [describe(path, project) for path in sorted(generated)],
-        "release_reports": [
-            {
-                "path": str(path.relative_to(project.parent)),
-                "bytes": path.stat().st_size,
-                "sha256": sha256(path),
-            }
-            for path in reports
-        ],
         "raw_data_note": (
             "Raw data are not copied into the project manifest. Their file sizes and dataset-level "
             "counts are recorded by audit.py and artifacts/data_audit_snapshot_2026-11-16.json."

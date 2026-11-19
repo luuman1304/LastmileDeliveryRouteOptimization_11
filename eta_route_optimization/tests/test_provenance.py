@@ -18,20 +18,3 @@ def test_manifest_excludes_runtime_cache_and_tracks_scripts(tmp_path: Path) -> N
 
     assert "scripts/generate.py" in paths
     assert not any("__pycache__" in path or path.endswith(".pyc") for path in paths)
-
-
-def test_manifest_tracks_release_reports_when_present(tmp_path: Path) -> None:
-    project = tmp_path / "project"
-    for folder in ["src", "tests", "configs", "docs", "scripts", "artifacts/generated"]:
-        (project / folder).mkdir(parents=True, exist_ok=True)
-    for name in ["README.md", "TASKS.md", "pyproject.toml", "references.bib"]:
-        (project / name).write_text("placeholder\n", encoding="utf-8")
-    paper = tmp_path / "paper"
-    paper.mkdir()
-    report = paper / "Nhom09_BaoCao_ETA_ToiUuTuyen.docx"
-    report.write_bytes(b"report")
-
-    payload = build(project)
-
-    assert payload["release_reports"][0]["path"] == "paper/Nhom09_BaoCao_ETA_ToiUuTuyen.docx"
-    assert payload["release_reports"][0]["bytes"] == 6
